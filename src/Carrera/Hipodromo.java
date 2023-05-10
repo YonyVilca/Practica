@@ -1,25 +1,13 @@
 package Carrera;
-
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
-import javax.swing.JScrollPane;
 import javax.swing.JPanel;
-import java.awt.BorderLayout;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JProgressBar;
-
 public class Hipodromo {
 
 	private JFrame frame;
@@ -90,10 +78,10 @@ public class Hipodromo {
 		
 		JProgressBar progressBar_1 = new JProgressBar();
 		panel.add(progressBar_1);
-		ca_02 = new Caballo(progressBar_1);
+		ca_02 = new Caballo(progressBar_1, "Caballo 2");
 		JProgressBar progressBar = new JProgressBar();
 		panel.add(progressBar);
-		ca_01 = new Caballo(progressBar);
+		ca_01 = new Caballo(progressBar, "Caballo 1");
 		frame.getContentPane().setLayout(groupLayout);
 	}
 }
